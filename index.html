@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom css</title>
+
+    <style>
+
+        :root{
+            --main-color:red;
+            --bg-color:pink;
+            --li-color:yellow;
+            --sect-width:300px;
+        }
+
+        h1{
+            color:var(--main-color);
+        }
+       header{
+           background-color: var(--bg-color);
+        }
+
+        .top-side {
+
+            background-color: var(--main-color);
+            float: left;
+            width: 30%;
+            height: 300px;
+        }
+
+        .blog-section {
+            background-color: var(--li-color);
+           /* float: left;
+           width: 50%; */
+          width: calc(100%-30%);
+          height: 300px;
+          overflow: hidden;
+          
+        }
+        .side-section {
+
+            background-color: var(--bg-color);
+          
+        }
+
+        footer {
+            clear: both;
+        }
+       
+       
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1>this header section</h1r>
+        <p>this pera is header</p>
+    </header>
+
+    <main class="container">
+
+        <section class="top-side">
+
+            <h2>this section is main section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque ipsam animi eveniet numquam, praesentium obcaecati eos accusamus explicabo quod hic aperiam quaerat amet aliquam quos laborum quia laudantium debitis, vitae quidem soluta dicta quis adipisci! Quibusdam, vel sunt. Beatae, asperiores! Veniam, adipisci debitis. Magni rem necessitatibus iusto suscipit itaque quam!</p>
+
+        </section>
+
+        <section class="blog-section">
+
+            <h3>this section is header</h3>
+            <p>this is pera Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, odit pariatur quam ducimus cumque ipsum repellat nulla autem facilis culpa? Necessitatibus, nostrum. Animi mollitia officia eligendi voluptatum iste, quidem doloremque nobis, nisi nihil veniam aliquid fugiat veritatis sit corrupti deleniti! Minus quia praesentium repudiandae quibusdam incidunt sint aliquid sapiente? Ab?</p>
+            
+        </section>
+        <section class="side-section">
+
+            <h3>this section is header</h3>
+            <p>this is pera Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, odit pariatur quam ducimus cumque ipsum repellat nulla autem facilis culpa? Necessitatibus, nostrum. Animi mollitia officia eligendi voluptatum iste, quidem doloremque nobis, nisi nihil veniam aliquid fugiat veritatis sit corrupti deleniti! Minus quia praesentium repudiandae quibusdam incidunt sint aliquid sapiente? Ab?</p>
+            
+        </section>
+    </main>
+
+
+    <footer>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam architecto beatae modi. Dicta exercitationem temporibus inventore provident necessitatibus adipisci nihil!</p>
+
+    </footer>
+    
+</body>
+</html>
